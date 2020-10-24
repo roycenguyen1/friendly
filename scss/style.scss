@@ -51,13 +51,44 @@ header {
       flex-direction: column;
 
       li {
-        margin: 1rem 0;
+        margin: 1.5rem 0;
 
         a {
           text-transform: uppercase;
-          letter-spacing: 0.1rem;
+          letter-spacing: 4px;
           color: white;
+          padding: 0.3rem;
         }
+      }
+    }
+  }
+
+  .hamburger {
+    position: fixed;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+
+    .line {
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      border-radius: 2px;
+      background: white;
+
+      &:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+      &:nth-child(2) {
+        top: 11px;
+        left: 0;
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        left: 0;
       }
     }
   }
